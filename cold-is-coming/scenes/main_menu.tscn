@@ -1,0 +1,337 @@
+[gd_scene format=3 uid="uid://eyfm53kdhu0q"]
+
+[ext_resource type="Texture2D" uid="uid://dsjxucs2whdp7" path="res://sprites/Menu/frame_0018.png" id="19_o6j0h"]
+[ext_resource type="Texture2D" uid="uid://daejyp0q3tgxw" path="res://sprites/Menu/frame_0019.png" id="20_woojs"]
+[ext_resource type="Texture2D" uid="uid://bi5l27f3km6t1" path="res://sprites/Menu/frame_0020.png" id="21_5mo7p"]
+[ext_resource type="Texture2D" uid="uid://d2mh7qovfeytg" path="res://sprites/Menu/frame_0021.png" id="22_w0rbc"]
+[ext_resource type="Texture2D" uid="uid://b8gs7g40gues0" path="res://sprites/Menu/frame_0022.png" id="23_u42ic"]
+[ext_resource type="Texture2D" uid="uid://kqh3esa52hdq" path="res://sprites/Menu/frame_0023.png" id="24_d6kpd"]
+[ext_resource type="Texture2D" uid="uid://blk6q3ug3ewhs" path="res://sprites/Menu/frame_0024.png" id="25_1mkqg"]
+[ext_resource type="Texture2D" uid="uid://cs57i2easwymr" path="res://sprites/Menu/frame_0025.png" id="26_v8m0w"]
+[ext_resource type="Texture2D" uid="uid://bo8hdwni585di" path="res://sprites/Menu/frame_0026.png" id="27_ilfvj"]
+[ext_resource type="Texture2D" uid="uid://cvh2ntfj438lp" path="res://sprites/Menu/frame_0027.png" id="28_e8u31"]
+[ext_resource type="Texture2D" uid="uid://b8xiy5mb0cp28" path="res://sprites/Menu/frame_0028.png" id="29_nkw73"]
+[ext_resource type="Texture2D" uid="uid://cbumpaaeg8mcs" path="res://sprites/Menu/frame_0029.png" id="30_p070q"]
+[ext_resource type="Texture2D" uid="uid://bggq4eg6a2ivh" path="res://sprites/Menu/frame_0030.png" id="31_e3uov"]
+[ext_resource type="Texture2D" uid="uid://djxxxopqh8mxg" path="res://sprites/Menu/frame_0031.png" id="32_o50lk"]
+[ext_resource type="Texture2D" uid="uid://c8cwhd2vbmevi" path="res://sprites/Menu/frame_0032.png" id="33_kwehi"]
+[ext_resource type="Texture2D" uid="uid://d17kgup6fmmk0" path="res://sprites/Menu/frame_0033.png" id="34_vlkg2"]
+[ext_resource type="Texture2D" uid="uid://xl6kybrtcjo6" path="res://sprites/Menu/frame_0034.png" id="35_w878i"]
+[ext_resource type="Texture2D" uid="uid://dkcgorv724ghj" path="res://sprites/Menu/frame_0035.png" id="36_ddpda"]
+[ext_resource type="Texture2D" uid="uid://nv0bkpbw5866" path="res://sprites/Menu/frame_0036.png" id="37_hrw3o"]
+[ext_resource type="Texture2D" uid="uid://b6mx7tk5k3xb5" path="res://sprites/Menu/frame_0037.png" id="38_rkah4"]
+[ext_resource type="Texture2D" uid="uid://brbtuy3t8fuyt" path="res://sprites/Menu/frame_0038.png" id="39_70wm6"]
+[ext_resource type="Texture2D" uid="uid://co8xi5u26srgr" path="res://sprites/Menu/frame_0039.png" id="40_48n1g"]
+[ext_resource type="Texture2D" uid="uid://cir6j1k0jukoo" path="res://sprites/Menu/frame_0040.png" id="41_y2w2k"]
+[ext_resource type="Texture2D" uid="uid://d32s7pj3blsm4" path="res://sprites/Menu/frame_0041.png" id="42_6tpeu"]
+[ext_resource type="Texture2D" uid="uid://cew5kp8vkmig6" path="res://sprites/Menu/frame_0042.png" id="43_idywq"]
+[ext_resource type="Texture2D" uid="uid://tjgpm6jqaea5" path="res://sprites/Menu/frame_0043.png" id="44_pv0qh"]
+[ext_resource type="Texture2D" uid="uid://cj3vewcvt3uru" path="res://sprites/Menu/frame_0044.png" id="45_oacue"]
+[ext_resource type="Texture2D" uid="uid://2eayqpv4vuuc" path="res://sprites/Menu/frame_0045.png" id="46_nuyip"]
+[ext_resource type="Texture2D" uid="uid://blj4rcsgnthnq" path="res://sprites/Menu/frame_0046.png" id="47_a163f"]
+[ext_resource type="Texture2D" uid="uid://dl474o6k5ego" path="res://sprites/Menu/frame_0047.png" id="48_w3frc"]
+[ext_resource type="Texture2D" uid="uid://c4aow7p74n362" path="res://sprites/Menu/frame_0048.png" id="49_5w44i"]
+[ext_resource type="Texture2D" uid="uid://drvdlvqww7d6e" path="res://sprites/Menu/frame_0049.png" id="50_holjs"]
+[ext_resource type="Texture2D" uid="uid://bgxi63tlaveg5" path="res://sprites/Menu/frame_0050.png" id="51_w6w5p"]
+[ext_resource type="Texture2D" uid="uid://cp385ba1ctjte" path="res://music/buttonHighlight.png" id="52_k5xsf"]
+[ext_resource type="Texture2D" uid="uid://kcj5n2o668f6" path="res://sprites/Menu/frame_0051.png" id="52_ofga3"]
+[ext_resource type="AudioStream" uid="uid://dukm4bibavngc" path="res://music/Kingdom Come_ Deliverance II OST - Saint Barbara Theme.mp3" id="52_ybca7"]
+[ext_resource type="Texture2D" uid="uid://dfbj0jjvnx6wy" path="res://sprites/Menu/frame_0052.png" id="53_07xnu"]
+[ext_resource type="Script" uid="uid://crimhn8w6g5xp" path="res://scripts/button.gd" id="53_71lbq"]
+[ext_resource type="Texture2D" uid="uid://btlv2hc7ttelq" path="res://sprites/Menu/frame_0053.png" id="54_yor0q"]
+[ext_resource type="Texture2D" uid="uid://c7n5qhbjwit6p" path="res://sprites/Menu/frame_0054.png" id="55_pvas3"]
+[ext_resource type="Texture2D" uid="uid://d1i7pd7koaxv1" path="res://sprites/Menu/frame_0055.png" id="56_45ngp"]
+[ext_resource type="Texture2D" uid="uid://bmoxo4c1hejg2" path="res://sprites/Menu/frame_0056.png" id="57_gveg0"]
+[ext_resource type="Texture2D" uid="uid://bfxq6gjniua8i" path="res://sprites/Menu/frame_0057.png" id="58_47ay2"]
+[ext_resource type="Texture2D" uid="uid://cakdhrdsg3cxi" path="res://sprites/Menu/frame_0058.png" id="59_mnxk2"]
+[ext_resource type="Texture2D" uid="uid://bddsvecg6m4k" path="res://sprites/Menu/frame_0059.png" id="60_et4go"]
+[ext_resource type="Texture2D" uid="uid://cfn2wfjs0oc7r" path="res://sprites/Menu/frame_0060.png" id="61_elmm4"]
+[ext_resource type="Texture2D" uid="uid://s6j7jlta6lkv" path="res://sprites/Menu/frame_0061.png" id="62_5use4"]
+[ext_resource type="Texture2D" uid="uid://xqekkwavvh8l" path="res://sprites/Menu/frame_0062.png" id="63_dfvos"]
+[ext_resource type="Texture2D" uid="uid://dkojhxonrat3y" path="res://sprites/Menu/frame_0063.png" id="64_4jfy1"]
+[ext_resource type="Texture2D" uid="uid://k8e4l5iu6rfm" path="res://sprites/Menu/frame_0064.png" id="65_owjxu"]
+[ext_resource type="Texture2D" uid="uid://vksopoui42w3" path="res://sprites/Menu/frame_0065.png" id="66_6skjv"]
+[ext_resource type="Texture2D" uid="uid://cqjfpb37u7wq3" path="res://sprites/Menu/frame_0066.png" id="67_lu4g0"]
+[ext_resource type="Texture2D" uid="uid://5yibxc6fj8ed" path="res://sprites/Menu/frame_0067.png" id="68_cnbnf"]
+[ext_resource type="Texture2D" uid="uid://dqc2ihj5yrjdr" path="res://sprites/Menu/frame_0068.png" id="69_dmmqw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jueod"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_o6j0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_woojs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5mo7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_w0rbc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_u42ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_d6kpd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1mkqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_v8m0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ilfvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_e8u31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_nkw73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_p070q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_e3uov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_o50lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_kwehi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_vlkg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_w878i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ddpda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hrw3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_rkah4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_70wm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_48n1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_y2w2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_6tpeu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_idywq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_pv0qh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_oacue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_nuyip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_a163f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_w3frc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_5w44i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_holjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_w6w5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_ofga3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_07xnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_yor0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_pvas3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_45ngp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_gveg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_47ay2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_mnxk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_et4go")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_elmm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_5use4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_dfvos")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_4jfy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_owjxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_6skjv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_lu4g0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_cnbnf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_dmmqw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k5xsf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mb34c"]
+
+[node name="Main Menu" type="Control" unique_id=910531583]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=594224374]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=189010792]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_jueod")
+autoplay = "default"
+frame_progress = 0.53340703
+speed_scale = 2.0
+
+[node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=525374841]
+stream = ExtResource("52_ybca7")
+autoplay = true
+
+[node name="Title" type="Label" parent="." unique_id=1413962949]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 195.0
+offset_right = 996.0
+offset_bottom = 301.0
+theme_override_font_sizes/font_size = 125
+text = "Cold is Coming"
+horizontal_alignment = 1
+
+[node name="Quit" type="Button" parent="." unique_id=1735994317]
+z_index = 2
+layout_mode = 0
+offset_left = 394.0
+offset_top = 523.0
+offset_right = 894.0
+offset_bottom = 623.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
+text = "Quit"
+script = ExtResource("53_71lbq")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Quit" unique_id=1516602887]
+z_index = -1
+layout_mode = 0
+offset_left = 85.0
+offset_top = 5.0
+offset_right = 430.0
+offset_bottom = 96.0
+texture = ExtResource("52_k5xsf")
+
+[node name="Options" type="Button" parent="." unique_id=99480587]
+z_index = 2
+layout_mode = 0
+offset_left = 394.0
+offset_top = 419.0
+offset_right = 894.0
+offset_bottom = 519.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
+text = "Options
+"
+script = ExtResource("53_71lbq")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Options" unique_id=993984472]
+z_index = -1
+layout_mode = 0
+offset_left = 85.0
+offset_top = 5.0
+offset_right = 430.0
+offset_bottom = 96.0
+texture = ExtResource("52_k5xsf")
+
+[node name="Play3" type="Button" parent="." unique_id=1615553495]
+z_index = 2
+layout_mode = 0
+offset_left = 394.0
+offset_top = 315.0
+offset_right = 894.0
+offset_bottom = 415.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
+text = "Play
+"
+script = ExtResource("53_71lbq")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Play3" unique_id=1087149278]
+z_index = -1
+layout_mode = 0
+offset_left = 85.0
+offset_top = 5.0
+offset_right = 430.0
+offset_bottom = 96.0
+texture = ExtResource("52_k5xsf")
+
+[connection signal="mouse_entered" from="Quit" to="Quit" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Quit" to="Quit" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Options" to="Options" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Options" to="Options" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Play3" to="Play3" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Play3" to="Play3" method="_on_mouse_exited"]
