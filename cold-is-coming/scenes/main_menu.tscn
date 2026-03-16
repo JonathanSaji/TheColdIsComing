@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://eyfm53kdhu0q"]
 
+[ext_resource type="Script" uid="uid://h0vqasefr8ve" path="res://scripts/main_menu.gd" id="1_sgh51"]
 [ext_resource type="Texture2D" uid="uid://dsjxucs2whdp7" path="res://sprites/Menu/frame_0018.png" id="19_o6j0h"]
 [ext_resource type="Texture2D" uid="uid://daejyp0q3tgxw" path="res://sprites/Menu/frame_0019.png" id="20_woojs"]
 [ext_resource type="Texture2D" uid="uid://bi5l27f3km6t1" path="res://sprites/Menu/frame_0020.png" id="21_5mo7p"]
@@ -235,12 +236,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ColorRect" type="ColorRect" parent="." unique_id=594224374]
-layout_mode = 0
-offset_right = 1920.0
-offset_bottom = 1080.0
-color = Color(0, 0, 0, 1)
+script = ExtResource("1_sgh51")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=189010792]
 position = Vector2(960, 540)
@@ -351,12 +347,24 @@ stream = ExtResource("55_akqfu")
 [node name="clicked" type="AudioStreamPlayer" parent="Effects" unique_id=2005986780]
 stream = ExtResource("56_mb34c")
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=594224374]
+modulate = Color(1, 1, 1, 0)
+z_index = 2
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
 [connection signal="mouse_entered" from="Quit" to="Quit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Quit" to="Quit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]
 [connection signal="mouse_entered" from="Options" to="Options" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Options" to="Options" method="_on_mouse_exited"]
+[connection signal="pressed" from="Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Options" to="Options" method="_on_pressed"]
 [connection signal="mouse_entered" from="Play" to="Play" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Play" to="Play" method="_on_mouse_exited"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
