@@ -39,8 +39,10 @@
 [ext_resource type="Texture2D" uid="uid://dfbj0jjvnx6wy" path="res://sprites/Menu/frame_0052.png" id="53_07xnu"]
 [ext_resource type="Script" uid="uid://crimhn8w6g5xp" path="res://scripts/button.gd" id="53_71lbq"]
 [ext_resource type="Texture2D" uid="uid://btlv2hc7ttelq" path="res://sprites/Menu/frame_0053.png" id="54_yor0q"]
+[ext_resource type="AudioStream" uid="uid://fkeapwp40ee7" path="res://music/efx/selection.mp3" id="55_akqfu"]
 [ext_resource type="Texture2D" uid="uid://c7n5qhbjwit6p" path="res://sprites/Menu/frame_0054.png" id="55_pvas3"]
 [ext_resource type="Texture2D" uid="uid://d1i7pd7koaxv1" path="res://sprites/Menu/frame_0055.png" id="56_45ngp"]
+[ext_resource type="AudioStream" uid="uid://h3qmdksnnahl" path="res://music/efx/clicked.mp3" id="56_mb34c"]
 [ext_resource type="Texture2D" uid="uid://bmoxo4c1hejg2" path="res://sprites/Menu/frame_0056.png" id="57_gveg0"]
 [ext_resource type="Texture2D" uid="uid://bfxq6gjniua8i" path="res://sprites/Menu/frame_0057.png" id="58_47ay2"]
 [ext_resource type="Texture2D" uid="uid://cakdhrdsg3cxi" path="res://sprites/Menu/frame_0058.png" id="59_mnxk2"]
@@ -295,6 +297,7 @@ offset_top = 419.0
 offset_right = 894.0
 offset_bottom = 519.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
@@ -321,6 +324,7 @@ offset_top = 315.0
 offset_right = 894.0
 offset_bottom = 415.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
@@ -339,9 +343,20 @@ offset_right = 430.0
 offset_bottom = 96.0
 texture = ExtResource("52_k5xsf")
 
+[node name="Effects" type="Node" parent="." unique_id=535073901]
+
+[node name="selection" type="AudioStreamPlayer" parent="Effects" unique_id=2051018854]
+stream = ExtResource("55_akqfu")
+
+[node name="clicked" type="AudioStreamPlayer" parent="Effects" unique_id=2005986780]
+stream = ExtResource("56_mb34c")
+
 [connection signal="mouse_entered" from="Quit" to="Quit" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Quit" to="Quit" method="_on_mouse_exited"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_pressed"]
 [connection signal="mouse_entered" from="Options" to="Options" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Options" to="Options" method="_on_mouse_exited"]
+[connection signal="pressed" from="Options" to="Options" method="_on_pressed"]
 [connection signal="mouse_entered" from="Play" to="Play" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Play" to="Play" method="_on_mouse_exited"]
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
