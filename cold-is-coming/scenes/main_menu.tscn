@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://c4aow7p74n362" path="res://sprites/Menu/frame_0048.png" id="49_5w44i"]
 [ext_resource type="Texture2D" uid="uid://drvdlvqww7d6e" path="res://sprites/Menu/frame_0049.png" id="50_holjs"]
 [ext_resource type="Texture2D" uid="uid://bgxi63tlaveg5" path="res://sprites/Menu/frame_0050.png" id="51_w6w5p"]
-[ext_resource type="Texture2D" uid="uid://cp385ba1ctjte" path="res://music/buttonHighlight.png" id="52_k5xsf"]
+[ext_resource type="Texture2D" uid="uid://cp385ba1ctjte" path="res://misc/buttonHighlight.png" id="52_k5xsf"]
 [ext_resource type="Texture2D" uid="uid://kcj5n2o668f6" path="res://sprites/Menu/frame_0051.png" id="52_ofga3"]
 [ext_resource type="AudioStream" uid="uid://dukm4bibavngc" path="res://music/Kingdom Come_ Deliverance II OST - Saint Barbara Theme.mp3" id="52_ybca7"]
 [ext_resource type="Texture2D" uid="uid://dfbj0jjvnx6wy" path="res://sprites/Menu/frame_0052.png" id="53_07xnu"]
@@ -218,7 +218,13 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k5xsf"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_71lbq"]
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mb34c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_akqfu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sgh51"]
 
 [node name="Main Menu" type="Control" unique_id=910531583]
 layout_mode = 3
@@ -238,7 +244,7 @@ color = Color(0, 0, 0, 1)
 position = Vector2(960, 540)
 sprite_frames = SubResource("SpriteFrames_jueod")
 autoplay = "default"
-frame_progress = 0.53340703
+frame_progress = 0.30225742
 speed_scale = 2.0
 
 [node name="Music" type="AudioStreamPlayer2D" parent="." unique_id=525374841]
@@ -263,9 +269,11 @@ offset_top = 523.0
 offset_right = 894.0
 offset_bottom = 623.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_71lbq")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
 text = "Quit"
 script = ExtResource("53_71lbq")
@@ -290,6 +298,7 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_akqfu")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
 text = "Options
 "
@@ -304,7 +313,7 @@ offset_right = 430.0
 offset_bottom = 96.0
 texture = ExtResource("52_k5xsf")
 
-[node name="Play3" type="Button" parent="." unique_id=1615553495]
+[node name="Play" type="Button" parent="." unique_id=1615553495]
 z_index = 2
 layout_mode = 0
 offset_left = 394.0
@@ -315,12 +324,13 @@ theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxEmpty_k5xsf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_sgh51")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_mb34c")
 text = "Play
 "
 script = ExtResource("53_71lbq")
 
-[node name="NinePatchRect" type="NinePatchRect" parent="Play3" unique_id=1087149278]
+[node name="NinePatchRect" type="NinePatchRect" parent="Play" unique_id=1087149278]
 z_index = -1
 layout_mode = 0
 offset_left = 85.0
@@ -333,5 +343,5 @@ texture = ExtResource("52_k5xsf")
 [connection signal="mouse_exited" from="Quit" to="Quit" method="_on_mouse_exited"]
 [connection signal="mouse_entered" from="Options" to="Options" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Options" to="Options" method="_on_mouse_exited"]
-[connection signal="mouse_entered" from="Play3" to="Play3" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="Play3" to="Play3" method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Play" to="Play" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Play" to="Play" method="_on_mouse_exited"]
