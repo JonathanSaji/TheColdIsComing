@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://dq3i8yc1yvtds"]
+
+[ext_resource type="Script" uid="uid://cs7lbmo8il1mq" path="res://scripts/eternal_flame.gd" id="1_036b0"]
+[ext_resource type="Script" uid="uid://c21it2vl20ul7" path="res://scripts/player.gd" id="2_dwbse"]
+[ext_resource type="Script" uid="uid://b00dsccdt25nb" path="res://scripts/camera_controller.gd" id="3_pkg7o"]
+[ext_resource type="Script" uid="uid://dff8cuku8hagu" path="res://scripts/wave_manager.gd" id="4_gbfbk"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aqk2v"]
+
+[node name="World" type="Node2D" unique_id=607706122]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=674601358]
+color = Color(0.09411765, 0.09411765, 0.16470589, 1)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=914724948]
+
+[node name="EternalFlame" type="Node2D" parent="." unique_id=1171465023]
+script = ExtResource("1_036b0")
+
+[node name="FlameLight" type="PointLight2D" parent="EternalFlame" unique_id=2050511624]
+texture = SubResource("CompressedTexture2D_aqk2v")
+
+[node name="Sprite2D" type="Sprite2D" parent="EternalFlame" unique_id=1107897269]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="EternalFlame" unique_id=145559471]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1205966494]
+script = ExtResource("2_dwbse")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1160889827]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1807123945]
+
+[node name="Marker2D" type="Marker2D" parent="Player" unique_id=514492493]
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=999288589]
+script = ExtResource("3_pkg7o")
+
+[node name="EnemySpawner" type="Node2D" parent="." unique_id=1057010271]
+
+[node name="WaveManager" type="Node" parent="." unique_id=699301507]
+script = ExtResource("4_gbfbk")
+
+[node name="ShopManager" type="Node" parent="." unique_id=1901484749]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=337629114]
+
+[node name="HealthBar" type="TextureProgressBar" parent="HUD" unique_id=1757746670]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="WarmthBar" type="ProgressBar" parent="HUD" unique_id=1794006660]
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="WaveLabel" type="Label" parent="HUD" unique_id=870207257]
+offset_right = 40.0
+offset_bottom = 23.0
