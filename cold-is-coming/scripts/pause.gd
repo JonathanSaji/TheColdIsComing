@@ -12,4 +12,5 @@ func _on_main_menu_pressed():
 	Fade.fade_to_scene("res://scenes/main_menu.tscn")
 
 func _on_quit_pressed():
-	get_tree().quit()
+	get_tree().paused = false
+	Fade.fade_and_quit()

@@ -46,7 +46,6 @@
 [ext_resource type="AudioStream" uid="uid://h3qmdksnnahl" path="res://music/efx/clicked.mp3" id="56_mb34c"]
 [ext_resource type="Texture2D" uid="uid://bmoxo4c1hejg2" path="res://sprites/Menu/frame_0056.png" id="57_gveg0"]
 [ext_resource type="Texture2D" uid="uid://bfxq6gjniua8i" path="res://sprites/Menu/frame_0057.png" id="58_47ay2"]
-[ext_resource type="Script" uid="uid://dn8mbccm02ngb" path="res://scripts/pause.gd" id="58_hjv1c"]
 [ext_resource type="Texture2D" uid="uid://cakdhrdsg3cxi" path="res://sprites/Menu/frame_0058.png" id="59_mnxk2"]
 [ext_resource type="Texture2D" uid="uid://bddsvecg6m4k" path="res://sprites/Menu/frame_0059.png" id="60_et4go"]
 [ext_resource type="Texture2D" uid="uid://cfn2wfjs0oc7r" path="res://sprites/Menu/frame_0060.png" id="61_elmm4"]
@@ -358,7 +357,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="Option" type="CanvasLayer" parent="." unique_id=569353686]
-script = ExtResource("58_hjv1c")
 
 [node name="Panel" type="Panel" parent="Option" unique_id=1290391560]
 offset_left = 1374.0
@@ -393,7 +391,7 @@ offset_left = 32.0
 offset_top = 137.0
 offset_right = 458.0
 offset_bottom = 248.0
-max_value = 1.0
+max_value = 24.0
 step = 0.01
 value = 1.0
 rounded = true

@@ -5,6 +5,7 @@ extends Node
 @onready var canvas = $Option
 
 func _ready():
+	canvas.visible = false
 	# Pass audio references to each button
 	for button in [$Play, $Options, $Quit]:
 		button.sfx_hover = selection
@@ -17,13 +18,15 @@ func _on_play_pressed():
 func _on_options_pressed():
 	clicked.play()
 	if canvas.visible:
+		Fade.fade_out(canvas)
 		canvas.visible = false
 	else:
+		Fade.fade_in(canvas)
 		canvas.visible = true
 
 func _on_quit_pressed():
 	clicked.play()
-	get_tree().quit()
+	Fade.fade_and_quit()
 	
 func _on_h_slider_value_changed(value):
 	AudioServer.set_bus_volume_db(
