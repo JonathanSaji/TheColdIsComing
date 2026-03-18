@@ -9,6 +9,9 @@ var current_direction = Vector2.ZERO
 var last_direction = Vector2.DOWN  # default facing direction
 
 func _physics_process(delta):
+	if get_tree().paused:
+		return  # 👈 stop processing if paused
+	
 	var direction = Vector2.ZERO
 	direction.x = Input.get_axis("ui_left", "ui_right")
 	direction.y = Input.get_axis("ui_up", "ui_down")

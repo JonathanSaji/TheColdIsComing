@@ -2,6 +2,7 @@ extends Node
 
 @onready var selection = $Effects/selection
 @onready var clicked = $Effects/clicked
+@onready var canvas = $Option
 
 func _ready():
 	# Pass audio references to each button
@@ -15,8 +16,17 @@ func _on_play_pressed():
 
 func _on_options_pressed():
 	clicked.play()
-	print("Options button pressed")
+	if canvas.visible:
+		canvas.visible = false
+	else:
+		canvas.visible = true
 
 func _on_quit_pressed():
 	clicked.play()
 	get_tree().quit()
+	
+func _on_h_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(
+		AudioServer.get_bus_index("Master"),
+		linear_to_db(value)
+		)
