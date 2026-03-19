@@ -6,6 +6,7 @@ extends Node
 
 func _ready():
 	canvas.visible = false
+	DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 	# Pass audio references to each button
 	for button in [$Play, $Options, $Quit]:
 		button.sfx_hover = selection
