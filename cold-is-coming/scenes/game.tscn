@@ -90,6 +90,7 @@ atlas = ExtResource("3_u5sy4")
 region = Rect2(48, 98, 16, 31)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p57ef"]
+load_path = "res://.godot/imported/16x32 Walk-Sheet.png-388673ec75a17443afbdf055780e27f8.ctex"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pl11u"]
 atlas = SubResource("CompressedTexture2D_p57ef")
@@ -358,7 +359,7 @@ script = ExtResource("1_yqjtg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=616530794]
 texture_filter = 1
-position = Vector2(319, 524)
+position = Vector2(338, 486.5)
 scale = Vector2(7.5, 7.5)
 sprite_frames = SubResource("SpriteFrames_oaba0")
 animation = &"walk-Down"
