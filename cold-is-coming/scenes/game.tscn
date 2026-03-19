@@ -89,23 +89,20 @@ region = Rect2(32, 98, 16, 31)
 atlas = ExtResource("3_u5sy4")
 region = Rect2(48, 98, 16, 31)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_p57ef"]
-load_path = "res://.godot/imported/16x32 Walk-Sheet.png-388673ec75a17443afbdf055780e27f8.ctex"
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_pl11u"]
-atlas = SubResource("CompressedTexture2D_p57ef")
+atlas = ExtResource("3_p57ef")
 region = Rect2(0, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bhx41"]
-atlas = SubResource("CompressedTexture2D_p57ef")
+atlas = ExtResource("3_p57ef")
 region = Rect2(16, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qnb83"]
-atlas = SubResource("CompressedTexture2D_p57ef")
+atlas = ExtResource("3_p57ef")
 region = Rect2(32, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sww3w"]
-atlas = SubResource("CompressedTexture2D_p57ef")
+atlas = ExtResource("3_p57ef")
 region = Rect2(48, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_suyxu"]
@@ -362,7 +359,7 @@ texture_filter = 1
 position = Vector2(338, 486.5)
 scale = Vector2(7.5, 7.5)
 sprite_frames = SubResource("SpriteFrames_oaba0")
-animation = &"walk-Down"
+animation = &"idle_down_right"
 
 [node name="walk" type="AudioStreamPlayer2D" parent="CharacterBody2D" unique_id=359209429]
 stream = ExtResource("5_gee14")
